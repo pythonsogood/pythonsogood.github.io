@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles/reset.css">
+		<style>
+			h1 {
+				font-weight: bold;
+				font-size: large;
+				margin: 5px;
+			}
+
+			.header {
+				background-color: blue;
+				width: 100%;
+				min-height: 50px;
+				text-align: center;
+				align-content: center;
+				border-bottom: 2px solid black;
+				font-weight: bold;
+				font-size: 32px;
+			}
+
+			.header div {
+				color: white;
+			}
+
+			.navbar {
+				background-color: lightblue;
+				width: 100%;
+				min-height: 5px;
+				text-align: center;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-bottom: 2px solid black;
+			}
+
+			.navbar-list li {
+				display: inline;
+				padding: 5px;
+				border-radius: 10px;
+			}
+
+			.navbar-list li a {
+				border: none;
+				text-decoration: none;
+				color: blue;
+			}
+
+			.navbar-list li.selected {
+				background-color: blue;
+				border: 1px solid black;
+			}
+
+			.navbar-list li.selected a {
+				color: white;
+			}
+
+			.sidebar {
+				background-color: silver;
+				float: left;
+				margin: 15px;
+				position: fixed;
+				width: 150px;
+				align-content: center;
+				padding: 5px;
+				border: 2px solid black;
+			}
+
+			.sidebar-list {
+				text-align: center;
+			}
+
+			.main_content {
+				background-color: lightgray;
+				margin: 15px 15px 15px 190px;
+				padding: 5px;
+				border: 2px solid black;
+			}
+
+			.footer {
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+				background-color: blue;
+				color: white;
+				padding: 15px;
+				border-top: 2px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div>My Website</div>
+		</div>
+		<div class="navbar">
+			<ul class="navbar-list">
+				<li class="selected"><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Support</a></li>
+			</ul>
+		</div>
+		<div class="sidebar">
+			<h1>Menu</h1>
+			<ul class="sidebar-list">
+				<li><a href="#">Overview</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Contacts</a></li>
+			</ul>
+		</div>
+		<div class="main_content">
+			<h1>Title</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est a voluptatem distinctio ab minima veniam quisquam iusto nemo fuga quo veritatis, accusamus dignissimos vero cum corrupti cupiditate magnam ea deleniti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem molestias aliquam vel voluptatum omnis minus ipsa et optio, sequi blanditiis quo. Veritatis, facilis enim fugit asperiores dignissimos velit tempora voluptatibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa adipisci a autem labore est nisi, saepe eligendi praesentium quidem quaerat harum eius quod minima quasi tenetur, deserunt optio, numquam error.</p>
+		</div>
+		<div class="footer">
+			<p>© 2025 Website | All rights reserved.</p>
+		</div>
+	</body>
+</html>
