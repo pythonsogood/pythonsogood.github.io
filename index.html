@@ -1,123 +1,97 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My First Webpage</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=comment,favorite,visibility" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/styles.css">
+		<link rel="stylesheet" href="assets/css/pages/index.css">
 	</head>
 	<body>
-		<table border="1">
-			<thead>
-				<tr>
-					<th>Menu</th>
-					<th>Main Content</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td align="center">About me</td>
-					<td>
-						<h1>Sultan</h1>
-						<h2>SE-2439</h2>
-						<h3>About Me</h3>
-						<p>High-level languages programmer</p>
-					</td>
-				</tr>
-				<tr>
-					<td align="center">Hobbies</td>
-					<td>
-						<ol>
-							<li>listening to music</li>
-							<li>coding</li>
-						</ol>
-					</td>
-				</tr>
-				<tr>
-					<td align="center">Favorite websites</td>
-					<td>
-						<ul>
-							<li><a href="https://stackoverflow.com">stackoverflow</a></li>
-							<li><a href="https://github.com">github</a></li>
+		<header>
+			<nav class="navbar navbar-expand-lg">
+				<div class="container-fluid">
+					<a class="navbar-brand lexend-deca-regular" href="/">My blog</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ms-auto my-2">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/about.html">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/contacts.html">Contacts</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/faq.html">FAQ</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="/resources.html">Resources</a>
+							</li>
 						</ul>
-					</td>
-				</tr>
-				<tr>
-					<td align="center">Image</td>
-					<td>
-						<img src="./assets/svelte.png" alt="svelte image">
-					</td>
-				</tr>
-				<tr>
-					<td align="center">Button</td>
-					<td>
-						<button>Click Me</button>
-					</td>
-				</tr>
-
-				<tr>
-					<td align="center">Schedule</td>
-					<td>
-						<table border="2">
-							<thead>
-								<tr>
-									<th>Subject</th>
-									<th>Day</th>
-									<th>Time</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Math</td>
-									<td>Monday</td>
-									<td>8:00 - 8:50</td>
-								</tr>
-								<tr>
-									<td>French</td>
-									<td>Tuesday</td>
-									<td>9:00 - 9:50</td>
-								</tr>
-								<tr>
-									<td>Finance</td>
-									<td>Wednesday</td>
-									<td>8:30 - 9:20</td>
-								</tr>
-								<tr>
-									<td>Kazakh</td>
-									<td>Thursday</td>
-									<td>8:45 - 9:35</td>
-								</tr>
-								<tr>
-									<td>Physical Education</td>
-									<td>Friday</td>
-									<td>10:00 - 10:50</td>
-								</tr>
-							</tbody>
-						</table>
-					</td>
-				</tr>
-				<tr>
-					<td align="center">Today's Mood</td>
-					<td>😊🎶🆒</td>
-				</tr>
-				<tr>
-					<td align="center">Form</td>
-					<td>
-						<form>
-							<label>
-								Name
-								<input type="text" name="name">
-							</label>
-							<label>
-								Email
-								<input type="email" name="email">
-							</label>
-							<label>
-								Favorite Color
-								<input type="color" name="fv-color">
-							</label>
-							<input type="submit" value="Submit">
-						</form>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container my-4 px-5 py-3 posts rounded-4">
+				<div class="my-4 mx-auto post overflow-hidden w-75 row border border-black rounded-2">
+					<img class="col-md-4 col-12 p-0 mh-100 mw-100 image" src="./assets/images/post3.png" loading="lazy" alt="image">
+					<div class="col-md-8 col-12 px-3 h-100 py-1 text d-flex flex-column">
+						<a class="text-decoration-none text-black fs-4 fw-semibold title" href="/posts/1.html">Owner is celebrating birthday today!</a>
+						<p class="overflow-y-hidden body mb-2">Happy birthday me!</p>
+						<div class="border-top border-black d-flex justify-content-between statistics fs-6">
+							<div>
+								488 <span class="material-symbols-outlined fs-5 like">favorite</span> 2 <span class="material-symbols-outlined fs-5 comment">comment</span>
+							</div>
+							<div>
+								743 <span class="material-symbols-outlined fs-5 views">visibility</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="my-4 mx-auto post overflow-hidden w-75 row border border-black rounded-2">
+					<img class="col-md-4 col-12 p-0 mh-100 mw-100 image" src="./assets/images/post2.jpg" loading="lazy" alt="image">
+					<div class="col-md-8 col-12 px-3 h-100 py-1 text d-flex flex-column">
+						<a class="text-decoration-none text-black fs-4 fw-semibold title" href="/posts/2.html">My Blog update</a>
+						<p class="overflow-y-hidden body mb-2">I slightly updated styles for this blogpost.</p>
+						<div class="border-top border-black d-flex justify-content-between statistics fs-6">
+							<div>
+								73 <span class="material-symbols-outlined fs-5 like">favorite</span> 1 <span class="material-symbols-outlined fs-5 comment">comment</span>
+							</div>
+							<div>
+								192 <span class="material-symbols-outlined fs-5 views">visibility</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="my-4 mx-auto post overflow-hidden w-75 row border border-black rounded-2">
+					<img class="col-md-4 col-12 p-0 mh-100 mw-100 image" src="./assets/images/post1.gif" loading="lazy" alt="image">
+					<div class="col-md-8 col-12 px-3 h-100 py-1 text d-flex flex-column">
+						<a class="text-decoration-none text-black fs-4 fw-semibold title" href="/posts/3.html">Hello everyone!</a>
+						<p class="overflow-y-hidden body mb-2">This is my first blog post. I hope you'll enjoy it!</p>
+						<div class="border-top border-black d-flex justify-content-between statistics fs-6">
+							<div>
+								15 <span class="material-symbols-outlined fs-5 like">favorite</span> 0 <span class="material-symbols-outlined fs-5 comment">comment</span>
+							</div>
+							<div>
+								302 <span class="material-symbols-outlined fs-5 views">visibility</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="d-flex align-items-center justify-content-center">
+			<p class="mb-0">© 2025 My Blog | All rights reserved.</p>
+		</footer>
 	</body>
 </html>
