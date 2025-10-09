@@ -1,3 +1,17 @@
 .container img {
 	max-height: 300px;
 }
+
+.post-comments {
+	text-align: left;
+	width: 50%;
+}
+
+.comments {
+	width: 90%;
+}
+
+.comment {
+	background-color: var(--bg-tertiary);
+	width: 100%;
+}
