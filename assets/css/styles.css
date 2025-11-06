@@ -1,7 +1,6 @@
 :root {
 	--bg-primary: white;
 	--bg-secondary: lightgray;
-	--bg-tertiary: #f0f0f0;
 }
 
 html, body {
@@ -27,11 +26,58 @@ main {
 
 .container {
 	background-color: var(--bg-primary);
+	border-radius: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
 }
 
 footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 	background-color: var(--bg-primary);
-	height: 75px;
+	min-height: 75px;
+	padding: 15px;
+}
+
+footer .row {
+	width: fit-content;
+}
+
+footer .col {
+	width: fit-content;
+}
+
+.footer-nav-title {
+	width: fit-content;
+	color: var(--bs-secondary-color);
+	font-weight: 500;
+}
+
+footer ul {
+	width: fit-content;
+	margin-bottom: 0;
+}
+
+footer .nav-item {
+	width: fit-content;
+}
+
+footer .nav-link {
+	width: fit-content;
+	font-weight: 500;
+}
+
+footer .nav-link:hover {
+	text-decoration: underline;
+}
+
+footer .copyright {
+	margin-bottom: 0;
+	margin-top: 1rem;
 }
 
 @media (max-width: 575.98px) {
@@ -64,6 +110,7 @@ footer {
 		'GRAD' 0,
 		'opsz' 24;
 	vertical-align: middle;
+	user-select: none;
 }
 
 .material-symbols-outlined.like {
