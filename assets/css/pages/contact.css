@@ -1,9 +1,21 @@
+.contacts li:nth-child(even) {
+	background-color: var(--bg-tertiary);
+}
+
 .contacts a {
 	text-decoration: none;
 }
 
 .contacts a:hover .link {
 	text-decoration: underline;
+}
+
+span.at {
+	color: black;
+}
+
+:root[data-bs-theme="dark"] span.at {
+	color: white;
 }
 
 #feedback {

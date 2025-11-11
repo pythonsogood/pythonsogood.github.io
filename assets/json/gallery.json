@@ -1,0 +1,30 @@
+[
+	{
+		"categories": ["nature"],
+		"image": "/assets/images/gallery1.jpg"
+	},
+	{
+		"categories": ["nature"],
+		"image": "/assets/images/gallery2.webp"
+	},
+	{
+		"categories": ["nature"],
+		"image": "/assets/images/gallery3.avif"
+	},
+	{
+		"categories": ["nature"],
+		"image": "/assets/images/gallery4.jpg"
+	},
+	{
+		"categories": ["city"],
+		"image": "/assets/images/gallery5.jpg"
+	},
+	{
+		"categories": ["city"],
+		"image": "/assets/images/gallery6.jpg"
+	},
+	{
+		"categories": ["city"],
+		"image": "/assets/images/gallery7.jpg"
+	}
+]
